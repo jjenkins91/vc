@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<!-- saved from url=(0100)https://content.byui.edu/file/5baa7973-1f47-4b74-bc67-7782514e10e4/1/Teach/213.03.TeachProblem.html# -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style> /* #0 */
+      body {
+        margin: 0;
+        text-align: center;
+
+
+      }
+
+      h1 {
+        margin: 0;
+        font-size: 35px;
+        color: blue;
+        padding-top: 30px;
+      }
+
+      a {
+        font-size: 20px;
+        color: blue;
+      }
+
+      a:hover {
+        font-size: 25px;
+        color: orange;
+      }
+
+      #menuBarList {
+        font-size: 22px;
+        color: orange;
+      }
+
+      .header {
+        background-image: url(turf.jpeg);
+        height: 150px;
+        width: auto;
+      }
+
+      .Week3Stylesheets{
+        font-size: 60px;
+        color: black;
+      }
+	</style>
+    <style> /* #1 */
+
+ body {
+     margin-left: 15%;
+ }
+ ​
+ .document {
+     padding-left: 10px;
+     padding-right: 160px;
+     color: #5c0a33;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ }
+ ​
+ h1,h2,h3,ul {
+     color: #b81466;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+ }
+ ​
+ a:hover {
+     color: #f075b3;
+     cursor: pointer;
+ }
+ ​
+ #menuBarList {
+     margin: 0;
+     padding: 0;
+     height: 100%;
+     width: 15%;
+     position: fixed;
+     z-index: 1;
+     top: 0;
+     left: 0;
+     background-color: pink;
+     overflow-x: hidden;
+     padding-top: 20px;
+ }
+ ​
+ #menuBarList li {
+     padding: 10px;
+     text-decoration: none;
+     font-size: 1.2em;
+     list-style-type: none;
+     text-align: center;
+     color: #818181;
+ }
+ ​
+ #menuBarList li:hover {
+     color: #f1f1f1;
+     cursor: pointer;
+ }
+ ​
+ #title h1 {
+     font-family: "Tangerine";
+ }
+	</style>
+    <style> /* #2 */
+      body {
+       font-size:24px;
+       background-color: black;
+       color: green;
+       margin-right: 270px;
+      }
+      #title {
+        position: relative;
+        animation: heading 2s ease 1s 2 alternate forwards;
+      }
+      @keyframes heading {
+        from {left:0px}
+        to {left:300px; color: red;}
+      }
+      h1, h3 {
+        position: relative;
+        width: max-content;
+        margin-right: 0;
+        animation: secondary 3s ease 5s 1 normal forwards;
+      }
+      @keyframes secondary {
+        from {left:0px}
+        to {left:200px; color: limegreen;}
+      }
+      ul {
+        opacity: 0.5;
+        position: fixed;
+        z-index: 50;
+        right: 20px;
+        top: 20px;
+        list-style-type: none;
+        margin: 5px;
+        padding: 10px;
+        width: max-content;
+        border: 1px dashed limegreen;
+        border-radius: 5px;
+      }
+      li {
+        width: 200px;
+        height: 30px;
+        background-color: black;
+        border: 5px solid green;
+        border-radius: 10px;
+        margin: 5px;
+      }
+      li:hover {
+        color: limegreen;
+        border-color: limegreen;
+        background-color: darkgreen;
+      }
+	</style>
+    <style> /* #3 */
+	   body { font-size:8px; }
+	</style>
+
+
+    <title>Week 03 : CSS</title>
+
+   </head>
+   <body onload="disableStyles()">
+      <div class="document">
+        <div id="title">
+          <h1>Week 03 : CSS</h1>
+          <p>This page will demonstrate how to switch between different CSS stylesheets to achieve a given effect</p>
+        </div> <!--title -->
+        <div class="content">
+          <div id="menuBar">
+            <ul id="menuBarList">
+              <li class="menuBarItem" onclick="applyStyle(0)">Stylesheet 1</li>
+              <li class="menuBarItem" onclick="applyStyle(1)">Stylesheet 2</li>
+              <li class="menuBarItem" onclick="applyStyle(2)">Stylesheet 3</li>
+              <li class="menuBarItem" onclick="applyStyle(3)">Stylesheet 4</li>
+              <li class="menuBarItem" onclick="disableStyles()">No Stylesheet</li>
+            </ul>
+          </div> <!-- menuBar -->
+          <div id="text">
+            <h1>Select the Stylesheet</h1>
+            <p>There are four stylesheets that you may select from. Each one will change the coloring, fonts,
+            		and even the layout of the page.You can change the layout of this page by selecting different
+                    stylesheets in the menu, or by selecting one of the following links:<br>
+              <a onclick="applyStyle(0)">Stylesheet 1</a>,
+              <a onclick="applyStyle(1)">Stylesheet 2</a>,
+              <a onclick="applyStyle(2)">Stylesheet 3</a>,
+              <a onclick="applyStyle(3)">Stylesheet 4</a>.
+            </p>
+             <h1>Instructions</h1>
+            <p>Please modify this page to include a description of each stylesheet, including anything clever that
+            		you did to achieve a given effect. Please also include the contributors to a given stylesheet.</p>
+         </div> <!-- text -->
+         <div id="sidebar">
+           <h3>Grading</h3>
+            <p>For this assignment we came together as a group put all of our stylesheets into one
+            HTML document. Making sure each style was distinct from rest. We each offered help
+          to one another in order to properly achieve perfect navigation between the separte stylesheet links.
+        We also discussed some of the unique css properties that were individually implemented as well.
+      (Jason: Stylesheet 1, Kira: Stylesheet2 , Joseph: Stylesheet 3)</p>
+          </div> <!--sidebar -->
+        </div> <!-- content -->
+        <div id="bottom">Submit this assignment by </div>
+      </div> <!-- document -->
+
+      <script>
+	    <!-- DISABLE STYLES: This function turns off the four stylesheets -->
+	    function disableStyles()
+		{
+		  document.styleSheets[0].disabled = true;
+		  document.styleSheets[1].disabled = true;
+		  document.styleSheets[2].disabled = true;
+		  document.styleSheets[3].disabled = true;
+		}
+		<!-- APPLY STYLES: This function turns off all four stylesheets, then turns one back on -->
+		function applyStyle(i)
+		{
+			disableStyles();
+			document.styleSheets[i].disabled = false;
+		}
+	  </script>
+
+​
+</body></html>

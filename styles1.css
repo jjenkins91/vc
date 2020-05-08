@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  text-align: center;
+
+
+}
+
+h1 {
+  margin: 0;
+  font-size: 35px;
+  color: blue;
+  padding-top: 30px;
+}
+
+a {
+  font-size: 20px;
+  color: blue;
+}
+
+a:hover {
+  font-size: 25px;
+  color: orange;
+}
+
+#menuBarList {
+  font-size: 22px;
+  color: orange;
+}
+
+.header {
+  background-image: url(turf.jpeg);
+  height: 150px;
+  width: auto;
+}
+
+.Week3Stylesheets{
+  font-size: 60px;
+  color: black;
+}
